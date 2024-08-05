@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
+    'paypal.standard.ipn', 
 ]
 
 MIDDLEWARE = [
@@ -150,3 +152,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'tacaoson230804@gmail.com'
 EMAIL_HOST_PASSWORD = 'ugpykphjfpwjwgpy'
 EMAIL_USE_TLS = True
+
+# Transactions
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
